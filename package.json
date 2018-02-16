@@ -1,0 +1,48 @@
+{
+  "name": "cessnalib.nodejs",
+  "version": "0.0.1-rc.1",
+  "description": "",
+  "main": ".dist/src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "typings": ".dist/src/index.d.ts",
+  "scripts": {
+    "test": "gulp test",
+    "build": "gulp build",
+    "start": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codelovesme/cessnalib.nodejs.git"
+  },
+  "keywords": [
+    "cessnalib",
+    "lib"
+  ],
+  "author": {
+    "name": "Fedai Kaya",
+    "email": "codelovesme@gmail.com"
+  },
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/codelovesme/cessnalib.nodejs/issues"
+  },
+  "homepage": "https://github.com/codelovesme/cessnalib.nodejs#readme",
+  "dependencies": {
+    "sift": "^3.3.5"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/gulp": "^4.0.4",
+    "@types/mocha": "^2.2.41",
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-typescript": "^3.2.2",
+    "mocha": "^3.4.2",
+    "typescript": "^2.4.2",
+    "gulp-mocha": "^4.3.1",
+    "merge2": "^1.2.0"
+  }
+}
