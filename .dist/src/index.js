@@ -6,7 +6,7 @@ var io;
     var FileSystem = /** @class */ (function () {
         function FileSystem() {
         }
-        FileSystem.convert = function (base64, saveInto, fileName, callback) {
+        FileSystem.base64ToFile = function (base64, saveInto, fileName, callback) {
             //is really base64 
             var matches = base64.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
             //set buffer

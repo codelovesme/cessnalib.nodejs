@@ -2,8 +2,7 @@ import * as fs from "fs"
 
 export namespace io {
     export class FileSystem {
-
-        public static convert(base64: string, saveInto: string, fileName: string, callback: (err: Error) => void) {
+        public static base64ToFile(base64: string, saveInto: string, fileName: string, callback: (err: Error) => void) {
             //is really base64 
             let matches = base64.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
             //set buffer
