@@ -19,7 +19,7 @@ var io;
                 if (!fs.existsSync(saveInto)) {
                     fs.mkdirSync(saveInto);
                 }
-                fs.writeFile(fileName, buffer.data, callback);
+                fs.writeFile(saveInto + "/" + fileName, buffer.data, callback);
             }
             callback(new Error("Invalid input."));
         };
