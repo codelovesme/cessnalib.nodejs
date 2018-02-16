@@ -21,7 +21,9 @@ var io;
                 }
                 fs.writeFile(saveInto + "/" + fileName, buffer.data, callback);
             }
-            callback(new Error("Invalid input."));
+            else {
+                callback(new Error("Invalid input."));
+            }
         };
         return FileSystem;
     }());

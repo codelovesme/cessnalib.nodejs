@@ -16,8 +16,9 @@ export namespace io {
                     fs.mkdirSync(saveInto);
                 }
                 fs.writeFile(saveInto+"/"+fileName, buffer.data, callback);
+            }else{
+                callback(new Error("Invalid input."));    
             }
-            callback(new Error("Invalid input."));
         }
     }
 }
